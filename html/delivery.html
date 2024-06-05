@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../CSS/доставка.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/deliveryStyle.css">
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=9529cded-ea27-49dd-9265-0773d4095209&lang=ru_RU"></script>
+	<script src="../JS/time.js"></script>
+	<script>window.onload = getCurrentTime;</script>
     <script>
       // При успешной загрузке API выполняется
       ymaps.ready(function () {
@@ -21,14 +23,11 @@
 
 		<header>
 			<nav>
-				<a href="Каталог.html" >Каталог</a>
-				<a href="Подбор по моделям.html" >Подбор по моделям</a>
+				<a href="catalog.html" >Каталог</a>
+				<a href="models.html" >Подбор по моделям</a>
 			
-				<a href="Доставка.html"class="activ">Доставка</a>
-				<a href="Поддержка.html">Поддержка</a>
-				<a class="img_a" href="main.html">
-					<img src="../img/login.png" />
-				</a>
+				<a href="delivery.html"class="activ">Доставка</a>
+				<a href="support.html">Поддержка</a>
 			</nav>
 		</header>
 
@@ -73,7 +72,7 @@
 							<a>Самовывоз со склада (только после онлайн оплаты, или оплаты в магазине) </a>
 						</li>
 						<li>
-							<a>Получение в пункте выдачи Geart Group</a>
+							<a>Получение в пункте выдачи Spare Group</a>
 						</li>
 						<li>
 							<a>Доставка курьером (уточняйте время и дату доставки)</a>
@@ -90,25 +89,23 @@
 				</div>
 			</div>
 			<aside class="center_right" >
+				
 				<div id="rigth_panel">
-
+					<h1>Текущее время: <span id="current-time"></h1>
 					<h1>Контакты</h1>
 					<p>Иркутск, ул. Сергеева, 3/B6</p>
-					<div id="map" style="width: 500px; height: 300px;"></div>
+					<div id="map"></div>
 					<script src="../JS/map.js"></script>
-					<p>Новосибирск, проспект Карла Маркса, 37/4/</p>
-					<div id="map1" style="width: 400px; height: 300px;"></div>
-					<script src="../JS/map1.js"></script>
-					<!-- <p>Екатеренбург, ул. Российская 87/4</p>
-					<img  src="../img/ad_3.png" /> -->
 				</div>
-
 			</aside>
-
 			<div class="right">
 			</div>
-
 	</div>
-	<link rel="JS" href="../JS/map.js">
 </body>
+<footer class="footer">
+    <div class="footeritem">
+        <button class="credit" onclick="DOMcreate()">О создателе</button>
+    </div>
+	<script src="../JS/DOM.js"></script>
+</footer>
 </html>
