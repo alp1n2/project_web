@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../CSS/подбор по моделям.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/modelsStyle.css">
+	
 </head>
 <body>
 
@@ -15,14 +16,11 @@
 
 		<header>
 			<nav>
-				<a href="Каталог.html" >Каталог</a>
-				<a href="Подбор по моделям.html" class="activ">Подбор по моделям</a>
+				<a href="catalog.html" >Каталог</a>
+				<a href="models.html" class="activ">Подбор по моделям</a>
 		
-				<a href="Доставка.html">Доставка</a>
-				<a href="Поддержка.html">Поддержка</a>
-				<a class="img_a" href="main.html">
-					<img src="../img/login.png" />
-				</a>
+				<a href="delivery.html">Доставка</a>
+				<a href="support.html">Поддержка</a>
 			</nav>
 		</header>
 
@@ -31,10 +29,27 @@
 			</div>
 			<div class="center_left">
 				<div id="main">
-					<img class="poisk_2" src="../img/poisk_2.png">
-					<img class="tovar" src="../img/tov.png" />
-
-				</div>
+					</div>
+					<div class="quiz">
+						<div class="overflow-hiddener">
+					<div class="quiz-line">
+						<div class="slide"><img src="../img/1.png"></div>
+						<div class="slide"><img src="../img/2.png"></div>
+						<div class="slide"><img src="../img/3.png"></div>
+						<div class="slide"><img src="../img/4.png"></div>
+						<div class="slide"><img src="../img/5.png"></div>
+						<div class="slide"><img src="../img/6.png"></div>
+						<div class="slide"><img src="../img/7.png"></div>
+						<div class="slide"><img src="../img/8.png"></div>
+						<div class="slide"><img src="../img/9.png"></div>
+						<div class="slide"><img src="../img/10.png"></div>
+						<div class="slide"><img src="../img/11.png"></div>
+						<div class="slide"><img src="../img/12.png"></div>
+					</div>
+					</div>
+					</div> 
+						<button class="greybutton" onclick="sliderprev()">Назад</button>
+						<button class="greybutton" onclick="slidernext()">Вперед</button>
 				<div id="news">
 				</div>
 			</div>
@@ -153,7 +168,13 @@
 			</aside>
 			<div class="right">
 			</div>
-
+			<script src="../JS/move.js"></script>
 	</div>
 </body>
+<footer class="footer">
+    <div class="footeritem">
+        <button class="credit" onclick="DOMcreate()">О создателе</button>
+    </div>
+	<script src="../JS/DOM.js"></script>
+</footer>
 </html>
